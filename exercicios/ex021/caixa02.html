@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(108, 199, 199, 0.342);
+        }
+
+        header {
+            background-color: rgba(245, 245, 220, 0.459);
+            color: #000000;
+            box-shadow: 2.5px 2.5px 2.5px rgba(0, 0, 0, 0.288);
+            border-radius: 10px;
+            padding: 10px;
+            margin: 35px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.432);
+            padding: 3px;
+            box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        nav > a {
+             text-decoration: none;
+             color: white;
+             font-weight: bold;
+             margin-right: 30px;
+        }
+
+        main {
+            background-color: rgba(245, 245, 220, 0.459);
+            border-radius: 10px;
+            padding: 10px;
+            margin: 35px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.295);
+            text-align: justify;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        article > aside {
+            background-color: rgba(139, 144, 151, 0.514);
+            padding: 5px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            margin: -8px;
+
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+     </header>
+     <main>
+        <section id="assuntos">
+             <p><b>Esporte Política Tecnologia</b></p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos dolores quo soluta ducimus dolorem atque quaerat dolorum incidunt aperiam iste veniam, consectetur corrupti, sit architecto odit magnam non voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita animi asperiores reprehenderit! Voluptates nostrum nisi aut voluptatum optio iure harum, voluptatibus vel. Expedita quod laboriosam quisquam temporibus voluptatum iure sint?</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+     </main>
+     <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+     </footer>
+</body>
+</html>
