@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 header {
     background-color: black;
@@ -9,6 +10,7 @@ header {
     height: 235px;
     margin-left: -10px;
     margin-right: -10px;
+
 }
 
 header > h1 {
@@ -22,3 +24,61 @@ h1 {
     font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
     font-weight: 900;
 }
+
+header > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-image: url(imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+section > p {
+    font-family: 'Sriracha', cursive, Arial, Helvetica, sans-serif;
+}
+
+div > section.sec1 > p {
+    width: 40%;
+    font-size: 40px;
+    background-color: white;
+}
+
+div#div02 {
+    background-color: rgba(0, 0, 0, 0.214);
+    font-size: 40px;
+}
+
+section.sec2 {
+    font-size: 50px;
+    color: white;
+}
+
+div#div03 {
+    background-color: white;
+    font-size: 40px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+footer > p {
+    padding: 10px;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
