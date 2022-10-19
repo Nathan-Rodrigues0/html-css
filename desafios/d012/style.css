@@ -3,93 +3,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: rgb(138, 96, 96);
+}
+
 header {
     background-color: black;
     color: white;
     text-align: center;
-    height: 235px;
-    margin-left: -10px;
 }
 
 header > h1 {
-    padding-top: 65px;
-    margin: -30px;
-    height: 135px;
+    padding-top: 50px;
+    font-variant: small-caps;
 }
 
-h1 {
-    font-size: 100px;
-    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
-    font-weight: 900;
+header >  p {
+    padding-bottom: 50px;
 }
 
-header > p > a {
+a {
+    color: white;
     text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+.sec {
+    background-color: white;
+    color: black;
+}
+
+.sec2 {
     color: white;
 }
 
-body {
-    background-image: url(imagens/background001.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: 100%;
+.sec2 > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.252);
 }
-
-div > section > p {
-    font-family: 'Sriracha', cursive, Arial, Helvetica, sans-serif;
-    padding: 20px;
-}
-
-div#div01 {
-    font-size: 40px;
-    background-color: white;
-    margin-top: -40px;
-    margin-left: -7px;
-}
-
-div#div02 {
-    background-color: rgba(0, 0, 0, 0.214);
-    font-size: 40px;
-    width: 50%;
-    color: white;
-}
-
-div#div03 {
-    background-color: white;
-    font-size: 40px;
-    margin-left: -7px;
-}
-
-div#div04 {
-    background-color: rgba(0, 0, 0, 0.214);
-    font-size: 40px;
-    width: 50%;
-    color: white;
-}
-
-div#div05 {
-    background-color: white;
-    font-size: 40px;
-    margin-left: -7px;
-}
-
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
-    margin-left: -10px;
-}
-
-footer > p {
     padding: 10px;
 }
-
-footer > p > a {
-    text-decoration: none;
-    color: white;
-}
-
-
-
