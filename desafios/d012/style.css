@@ -33,7 +33,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    background-size: 1362px;
+    background-size: 100%;
 }
 
 div > section > p {
