@@ -63,13 +63,31 @@ section {
 
 .sec2 {
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.558);
 }
 
 .sec2 > p {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.252);
-    padding: 5px;
+    padding: 8px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.568);
 }
+#div {
+    background-image: url(imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#div01 {
+    background-image: url(imagens/background002.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 
 footer {
     background-color: black;
