@@ -1,3 +1,28 @@
-@charset "UTF-8";
+@charset "UTF-";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
+body {
+    background-image: url(mundo.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 75px;
+    margin-top: -35px;
+    margin-left: -8px;
+}
+
+header > h1 {
+    text-align: center;
+    font-family: 'Passion One', cursive, Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    font-size: 50px;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 5px rgba(0, 204, 255, 0.426);
+}
