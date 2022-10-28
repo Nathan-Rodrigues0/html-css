@@ -5,15 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(94, 175, 255, 0.735);
+        }
+
+        main {
+            background-color: white;
+            width: 500px;
+            margin: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        tr, th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        thead {
+            background-color: rgb(167, 166, 166);
+            color: white;
+        }
+
+        td {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        th#th1 {
+            text-align: left;
+        }
+
+        th#th2 {
+            text-align: left;
+        }
+
+        tr.média1 {
+            background-color: rgb(167, 166, 166);
+            color: white;
+        }
+        
+        tr.média2 {
+            background-color: rgb(167, 166, 166);
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <table>
-        <thead>
-
-        </thead>
-        <tbody>
-            
-        </tbody>
-    </table>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Área</th>
+                    <th rowspan="2">Disciplinas</th>
+                    <th colspan="2">Notas</th>
+                    <th rowspan="2">Média</th>
+                </tr>
+                <tr>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4">Exatas</th>
+                    <td>Matemática</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td>9</td>
+                    <td>7</td>
+                    <td>8.8</td>
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td>7</td>
+                    <td>10</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>5.5</td>
+                    </tr>
+                <tr class="média1">
+                    <th colspan="4" id="th1">Média de Exatas</th>
+                    <td>9.5</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Humanas</th>
+                    <td>História</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>7.5</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>6.7</td>
+                </tr>
+                <tr class="média2">
+                    <th colspan="4" id="th2">Média de Humanas</th>
+                    <td>7.2</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
 </body>
 </html>
