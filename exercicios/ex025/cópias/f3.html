@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+        
+        h1 {
+            text-align: center;
+         }
+        div {
+            background-color: white;
+            width: 500px;
+            padding-left: 10px;
+        } 
+    </style>
+</head>
+<body>
+    <ins>
+       <h1>Consulta sobre a Prova ERF</h1>
+  </ins>
+  <div>
+    <h2>Preencha esse Formulário:</h2>
+    <p>
+        <label for="iname">Nome:</label>
+        <input type="text" name="nome" id="iname" required autocomplete="name" placeholder="Nome completo">
+    </p>
+    <p>
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" min="0" max="2" maxlength="2">
+    </p>
+    <p>
+        <label for="idate">Data da prova feita:</label>
+        <input type="date" name="data" id="idate" required>
+    </p>
+    <p>
+        <label for="inota">Nota:</label>
+        <input type="number" name="nota" id="inota" required min="0" max="2" maxlength="4">
+    </p>
+    <p>
+        <input type="submit" value="enviar" id="res" onclick="enviar()">
+    </p>
+    <p>
+        <label for="res">Resultado:</label>
+    </p>
+  </div>
+  <script src="form.js"></script>
+</body>
+</html>
