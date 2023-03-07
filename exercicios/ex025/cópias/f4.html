@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-color: rgba(255, 248, 220, 0.423);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        fieldset {
+            background-color: rgb(255, 255, 255);
+            color: rgb(119, 69, 12)
+        }
+    </style>
+</head>
+<body>
+        <ins>
+            <h1>Formulário social</h1>
+        </ins>
+
+        <fieldset>
+            <legend><strong>DADOS PESSOAIS</strong></legend>
+        <p>
+            <label for="iname">Nome:</label>
+            <input type="text" name="name" id="iname" required minlength="4" maxlength="15">
+        </p>
+        <p>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" minlength="1" maxlength="2" min="0" max="2">
+        </p>
+        <p>
+            <label for="iemail">E-mail:</label>
+            <input type="email" name="email" id="iemail">
+        </p>
+        <p>
+            <label for="itel">Telefone:</label>
+            <input type="tel" name="tel" id="itel" required pattern="^[0-9]{4}-[0-9]{4}$">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+             <input type="reset" value="Limpar">
+        </p>
+    </fieldset>
+</body>
+</html>
