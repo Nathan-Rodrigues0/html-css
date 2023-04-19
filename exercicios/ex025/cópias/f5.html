@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            
+        }
+        form {
+            background-color: white;
+            width: 50%;
+            margin: auto;
+        }
+        h1, legend {
+            text-align: center;
+            color: rgb(197, 99, 29);
+        }
+        p {
+            color: rgb(197, 99, 29);
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário Esportivo</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>
+                <strong>Com quem estou falando?</strong>
+            </legend>
+                <p>Sexo:</p>
+                    <input type="radio" name="sx" id="sxm"><label for="sxm">Masculino</label><br>
+                    <input type="radio" name="sx" id="sxf"><label for="sxf">Feminino</label>
+                <p>Idade:</p>
+                    <input type="radio" name="id" id="id60"><label for="id60">+60</label> <br>
+                    <input type="radio" name="id" id="id18"><label for="id18">+18</label> <br>
+                    <input type="radio" name="id" id="id0"><label for="id0">-18</label>
+                <p>Esporte:</p>
+                    <input type="checkbox" name="bas" id="bas">  <label for="bas">Basquete</label><br>
+                    <input type="checkbox" name="fut" id="fut"> <label for="fut">Futebol</label> <br>
+                    <input type="checkbox" name="ten" id="ten"> <label for="ten">Tênis</label> <br>
+                    <input type="checkbox" name="nat" id="nat"> <label for="nat">Natação</label> <br>
+                    <input type="checkbox" name="vo" id="vo"> <label for="vo">Volêi</label>
+                <p>Finalizar</p>
+                <input type="reset" value="APAGAR"> ou
+                <input type="submit" value="ENVIAR">
+        </fieldset>
+    </form>
+</body>
+</html>
