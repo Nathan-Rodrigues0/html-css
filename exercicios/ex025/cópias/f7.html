@@ -5,8 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        body {
+            background-color: rgba(128, 255, 0, 0.069);
+        }
+
+        div {
+            background-color: white;
+            width: 50%;
+            margin: auto;
+            box-shadow: -15px 15px 10px rgba(0, 0, 0, 0.152);
+        }
+
+        h1 {
+            text-align: center;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        p {
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+        <h1>Formulário</h1>
+        <div>
+            <p>
+                <label for="ies">Estado:</label>
+                <select name="estado" id="ies">
+                    <option value="" selected> Selecione</option>
+                    <optgroup label="Região Sul">
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="PR">Paraná</option>
+                    </optgroup>
+            
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Jnaeiro</option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                    <optgroup label="Região Centro Oeste">
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="DF">Distrito Federal</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="BA">Bahia</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="CE">Ceará</option>
+                        <option value="PI">Piauí</option>
+                        <option value="MA">Maranhão</option>
+                    </optgroup>
+                    <optgroup label="Região Norte">
+                        <option value="TO">Tocantins</option>
+                        <option value="PA">Pará</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="RR">Roraima</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="AC">Acre</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="ipro">Profissão:</label>
+                <input type="text" name="profissão" id="ipro" list="lispro">
+                <datalist id="lispro">
+                    <option value="ADM">Administração</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="ADV">Advogado</option>
+                    <option value="ENG">Engenheiro</option>
+                    <option value="MED">Médico</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="imsg">Mensagem:</label> <br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </div>
 </body>
 </html>
