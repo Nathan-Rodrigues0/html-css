@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="iano">Em que ano você nasceu ?</label>
+            <input type="number" name="numbe" id="iano" min="1900" max="2023" oninput="calIdade()">
+        </p>
+
+        <p>
+            <label for="idade">Sua idade é:</label>
+            <output id="idade">0</output>
+        </p>
+       
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    <script>
+        function calIdade() {
+            var at = new Date().getFullYear()
+            idade.innerHTML = Number(at) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
