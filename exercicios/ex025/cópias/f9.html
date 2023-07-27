@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-color: #5849e38c;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #0B025E;
+        }
+
+        div {
+            background-color: white;
+            width: 50%;
+            padding: 10px;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow: 10px 10px 10px #0B025E;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            text-shadow: 5px 5px 5px #0b025e54;
+            color: #0B025E;
+        }
+
+        output {
+            font-size: 30px;
+            padding-left: 10px;
+        }
+
+        input#num {
+             width: 290px;
+        }
+
+        input#sub {
+            margin: auto;
+            display: block;
+            height: 40px;
+            font-weight:  900;
+            box-shadow: 1px 1px 1px #0b025e;
+        }
+
+        #lim {
+            margin: auto;
+            display: block;
+            height: 30px;
+            font-weight: 900;
+            box-shadow: 1px 1px 1px #0b025e;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <div>
+        <form action="cadastro.php" method="get">
+            <p>
+                <label for="num"><strong>Idade:</strong></label>
+                <input type="range" name="num" id="num" min="0" max="100"  oninput="tot.innerHTML = Number(num.value) +  (' anos')">
+                <output id="tot">50 anos</output>
+            </p>
+            <p>
+                <input type="submit" value="Enviar" id="sub">
+            </p>
+            <p>
+                <input type="reset" value="Limpar" id="lim">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
