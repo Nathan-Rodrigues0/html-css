@@ -6,35 +6,37 @@
     <title>Formulário</title>
     <style>
         body {
-            background-color: antiquewhite;
+            background-color:antiquewhite;
             font-family: cursive;
         }
 
         div#div1 {
             background-color: white;
-            box-shadow: 1px 1px 20px rgba(86, 43, 12, 0.475);
+            box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.856);
             width: 60%;
             padding: 25px;
             margin: auto;
             background-image: url(foto\ idade.avif);
             background-repeat: no-repeat;
             background-position: center right;
+            background-size: 60%;
             position: absolute;
             transform: translate(160px, 65px);
         }
 
         div#div0 {
-            background-color: white;
+            background-color: rgba(86, 43, 12, 0.477);
             border: 1px solid rgba(0, 0, 0, 0.681);
-            box-shadow: inset 1px 1px 20px 10px  rgba(86, 43, 12, 0.258);
+            box-shadow: inset 1px 1px 20px 10px  rgba(0, 0, 0, 0.321);
             height: 350px;
-            margin-left: 30px;
-            margin-right: 30px;
+            margin-left: 70px;
+            margin-right: 70px;
             position: relative;
         }
 
         h1 {
             text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: rgb(86, 43, 12);
             font-size: 50px;
             text-shadow: 1px 5px 10px  rgba(86, 43, 12, 0.65);
@@ -47,8 +49,8 @@
         }
 
         #en, #lim {
-            width: 70px;
-            height: 40px;
+            width: 65px;
+            height: 35px;
             text-shadow: 3px 2px 4px rgba(86, 43, 12, 0.307);
             margin-right: 10px;
             margin-top: 10px;
@@ -57,8 +59,27 @@
             display: inline-block;
         }
 
-        #en:active, #lim:active {
-            box-shadow: 0px 0px 0px, inset 3px 3px 3px rgba(86, 43, 12, 0.381);
+        #en, #lim {
+            animation: go-back 1s infinite alternate;
+        }
+
+        #en:hover, #lim:hover {
+            /* hover é efeito de eflutuar/ cursor é efeito ao mouse */
+            background-color: antiquewhite;
+            transition: 0.5s;
+            cursor: pointer;
+            width: 75px;
+            height: 45px;
+            
+        }
+
+        @keyframes go-back {
+            from {
+                /* código abaixo é para ficar movendo o eixo (Y) pra cima */
+                transform: translateY(5px);
+            } to {
+                transform: translateY(0);
+            }
         }
 
         output {
