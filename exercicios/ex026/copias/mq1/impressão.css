@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+article {
+    width: 100%;
+}
+
+article::after {
+    content: 'Esse artigo foi impresso através do site https://github.com/Nathan-Rodrigues0';
+}
