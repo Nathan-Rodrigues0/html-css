@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgba(127, 255, 240, 0.203);
+}
+
+header {
+    background-color: rgba(0, 0, 255, 0.721);
+    color: white;
+}
+
+header > h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+menu li {
+    display: inline-block;
+    padding: 10px;
+}
+
+menu li:hover {
+    background-color: rgb(11, 11, 90);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+menu li{
+    cursor: pointer;
+}
+
+article {
+    width: 600px;
+    display: block;
+    margin: auto;
+    background-color: white;
+}
+
+article > h2 {
+    padding: 15px;
+}
+
+article > figcaption {
+    padding-bottom: 15px;
+}
+
+article > p {
+    padding: 10px;
+}
