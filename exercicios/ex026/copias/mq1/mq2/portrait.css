@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(images.jpg);
+}
+
+main {
+    width: 400px;
+    text-align: center;
+}
