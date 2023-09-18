@@ -22,3 +22,22 @@ main {
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (orientation: portrait) {
+    body {
+        background-image: url(images.jpg);
+    }
+    
+    main {
+        width: 400px;
+        text-align: center;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url(images\ \(1\).jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
