@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/*Configuração do Mobile First*/
+
+* {
+    margin: 0;
+    padding-left: 0;
+}
+
+body {
+    background:  url(image/back-phone.jpg) no-repeat;
+    background-size: 150vh;
+    background-position: top center;
+}
+
+div {
+    background-color: rgba(245, 245, 245, 0.76);
+    color: white;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+img {
+    margin: auto;
+}
+
+img.phone{display: block;}
+img.tablet{display: none;}
+img.print{display: none;}
+img.pc{display: none;}
+img.tv{display: none;}
+
+/* Typical Device Breakpoints
+-----------------------------
+pequenas telas =  até 600px
+Celular = de 600px até 768px
+Tablet = de 769px até 992px
+Desktop = de 993px até 1200px
+grandes telas= acima de 1200px
+*/
+
+@media print {
+    body {
+        background-image: url(image/back-print.jpg);
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    div {
+        border: 2px solid black;
+    }
+
+    div h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img.phone {display: none;}
+    img.tablet {display: none;}
+    img.print {display: block;}
+    img.pc {display: none;}
+    img.tv {display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(image/back-tablet.jpg);
+    }
+
+    img.phone {display: none;}
+    img.tablet {display: block;}
+    img.print {display: none;}
+    img.pc {display: none;}
+    img.tv {display: none;}
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(image/back-pc.jpg);
+    }
+
+    img.phone {display: none;}
+    img.tablet {display: none;}
+    img.print {display: none;}
+    img.pc {display: block;}
+    img.tv {display: none;}
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image:  url(image/back-tv.jpg);
+    }
+
+    img.phone {display: none;}
+    img.tablet {display: none;}
+    img.print {display: none;}
+    img.pc {display: none;}
+    img.tv {display: block;}
+}
