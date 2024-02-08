@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsividade</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <span id="icons" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Option 1</a></li>
                 <li><a href="#">Option 2</a></li>
@@ -27,9 +29,19 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui suscipit pariatur, fuga rem atque sunt magnam totam reprehenderit dolores eveniet, dolor ad. Sed enim obcaecati at perferendis quisquam, aperiam quasi.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate velit commodi non recusandae similique nihil obcaecati, culpa veniam ea, ut odit id blanditiis quia officiis molestias consequuntur ratione architecto porro Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos provident veniam, quidem sequi ab saepe necessitatibus consequatur quisquam, temporibus qui, sed blanditiis a dolor. Ipsa facere repudiandae eligendi necessitatibus aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, non veritatis. Fuga voluptatum eaque quibusdam temporibus quo, atque nam incidunt laborum corporis iste excepturi quasi, totam quia perspiciatis nobis fugit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatum quos adipisci in labore rerum. Architecto ad voluptas labore aliquam. Perferendis enim, magnam consectetur dicta animi dolorem natus atque! Quaerat..</p>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe necessitatibus, non ex mollitia aperiam asperiores architecto sequi voluptas nobis error doloremque dignissimos labore vitae repellendus ipsum voluptates similique perferendis qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim obcaecati a ex laboriosam consequuntur aut sunt necessitatibus corrupti eius expedita accusantium quas, odio in voluptate dicta molestiae fugiat porro possimus!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore nostrum voluptatem blanditiis praesentium inventore atque nihil facilis, asperiores nulla repellat quo, ullam molestias earum eveniet et consectetur perferendis expedita. lkore
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, a quae tenetur ducimus atque voluptatum mollitia ullam doloremque illum iste assumenda ab earum consequatur, fugit, ipsa distinctio minus in possimus?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et ducimus veniam deserunt facere voluptas doloremque sit nemo odit temporibus aut esse rem voluptatem sequi repellat porro molestiae, ipsam suscipit laudantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sint illum sapiente quasi maiores temporibus nisi doloribus esse consectetur inventore sunt voluptas, impedit pariatur reprehenderit excepturi repudiandae veniam totam. < class="lore">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem eum nulla consectetur minus repudiandae a velit aliquam, officiis, doloremque autem perspiciatis? Non, quos perspiciatis! Animi laborum magni culpa nisi nostrum!lore
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, a quae tenetur ducimus atque voluptatum mollitia ullam doloremque illum iste assumenda ab earum consequatur, fugit, ipsa distinctio minus in possimus?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et ducimus veniam deserunt facere voluptas doloremque sit nemo odit temporibus aut esse rem voluptatem sequi repellat porro molestiae, ipsam suscipit laudantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sint illum sapiente quasi maiores temporibus nisi doloribus esse consectetur inventore sunt voluptas, impedit pariatur reprehenderit excepturi repudiandae veniam totam. class="lore"orem ipsum, dolor sit amet consectetur adipisicing elit. Quidem eum nulla consectetur minus repudiandae a velit aliquam, officiis, doloremque autem perspiciatis? Non, quos perspiciatis! Animi laborum magni culpa nisi nostrum!lore
             </p>
         </article>
     </main>
+    <script>
+       function clickMenu(){
+           const menu = document.getElementById("itens")
+           if(menu.style.display == "block") {
+            menu.style.display = "none"
+        } else {
+            menu.style.display = "block"
+        }
+    }
+    </script>
 </body>
 </html>
