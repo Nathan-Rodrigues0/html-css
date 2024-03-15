@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsividade</title>
+    <!--adicionando um icons do google icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <span id="icons" class="material-icons" onclick="clickMenu()">menu</span>
@@ -34,14 +36,22 @@
         </article>
     </main>
     <script>
-       function clickMenu(){
-           const menu = document.getElementById("itens")
-           if(menu.style.display == "block") {
-            menu.style.display = "none"
-        } else {
-            menu.style.display = "block"
+        function clickMenu(){
+            const menu = document.getElementById("itens")
+            if(menu.style.display == "block") { //para esconder
+                menu.style.display = "none"
+            } else {
+                menu.style.display = "block" //para mostrar
+            }
         }
-    }
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 868){
+                itens.style.display = "block"
+            }else{
+                itens.style.display = "none"
+            }
+        }
     </script>
 </body>
 </html>
